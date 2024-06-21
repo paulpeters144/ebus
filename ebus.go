@@ -81,11 +81,3 @@ func (eb *EventBus) SubCount() int {
 	}
 	return count
 }
-
-type EventAssertionError struct {
-	Msg string
-}
-
-func (e *EventAssertionError) Error() string {
-	return e.Msg
-}
